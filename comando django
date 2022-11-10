@@ -1,2 +1,2 @@
 python manage.py runserver          #iniciar servidor
-python manage.py startapp "bingo"   #iniciar app web
+python manage.py startapp "nome do app"   #iniciar app web
