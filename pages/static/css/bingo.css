@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.superMain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://m.media-amazon.com/images/I/B15tplAAhFS.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+}
+
+.main2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/vetores-premium/bolas-e-bilhetes-de-loteria-poster-de-bingo-3d-para-jogos-de-loteria-bingo-ou-keno_8071-2336.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+}
+
+.main3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/vetores-premium/bolas-e-bilhetes-de-loteria-poster-de-bingo-3d-para-jogos-de-loteria-bingo-ou-keno_8071-2336.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+}
+    
+a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0px rgb(255, 255, 255), 
+    -1px 1px 0px rgb(102, 12, 12),                    
+    1px -1px 0px rgb(226, 126, 12),                  
+    1px 0px 0px rgb(255, 255, 28);
+    color: rgb(255, 246, 28);
+    height: fit-content;
+    padding: 15px 0px;
+}
+
+a:hover{
+    background-color: rgb(241, 233, 119);
+}
+
+.header{
+    border-bottom: 2px solid rgb(32, 32, 32);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 10, 241);
+}
+
+.headerContent{
+    margin: 0px 40px;
+    display: flex;
+    gap: 40px;
+    font-size: auto;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+
+.LoginMenu{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 0px 0px;
+    width: 350px;
+    height: 40%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 20px;
+}
+h3{
+    color: white
+}
+
+input::placeholder{
+    font-family:Helvetica, Helvetica;
+    color: rgb(7, 7, 7);
+    border-radius: 5px;
+}  
+
+input{
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 35px;
+    
+    
+}
+
+button{
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 30px;
+    height: 35px;
+    border: 0;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    display: flex;
+    
+}
+
+.grid #um, #trez, #cinco, #sete, #nove, #onze, #treze, #quinze{
+    background-color: red;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    border: 3px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(93, 0, 255);
+    text-shadow: 
+    -1px -1px 0px rgb(255, 255, 228), 
+    -1px 1px 0px rgb(255,255, 28),                    
+    1px -1px 0px rgb(255, 255, 28),                  
+    1px 0px 0px rgb(255, 255, 28);
+}
+
+.grid #dois, #quatro, #seis, #oito, #dez, #doze, #quatorze{
+    background-color: rgb(93, 0, 255);
+    border-radius: 25px;
+    margin-top: 35px;
+    height: 45px;
+    width: 45px;
+    border: 3px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    text-shadow: 
+    -1px -1px 0px red, 
+    -1px 1px 0px red,                    
+    1px -1px 0px white,                  
+    1px 0px 0px rgb(255, 255, 28);
+}
+
+@media (max-width: 800px){
+    .navItems{
+        font-size:200%;
+    }
+    .headerContent{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 560px){
+    .navItems{
+        font-size:100%;
+    }
+    .headerContent{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 340px){
+    .navItems{
+        font-size:75%;
+    }
+    .headerContent{
+        gap: 10px;
+    }
+}

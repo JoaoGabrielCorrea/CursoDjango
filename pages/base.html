@@ -1,15 +1,31 @@
 <!DOCTYPE html>
+{% load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block 'title'%}{%endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/bingo.css'%}">
 </head>
 
 <body>
-    <h1>navbar bar BASE NAV</h1>
-    {%block 'conteudo'%}{%endblock%} 
+
+    {%block 'conteudo'%}
+        <h3>testes</h3>
+    {%endblock%}
+    
+    <div class="superMain">
+        <div class="header">
+            <div class="headerContent">
+                <div><a href="#" class="navItems">Home</a></div>
+                <div><a href="#" class="navItems">BET NOW</a></div>
+                <div><a href="bingoresultado.html" class="navItems">Results</a></div>
+                <div><a href="loginbingo.html" class="navItems">Login</a></div>
+            </div>
+        </div>
+        <div class="main"></div>
+    </div>
 </body>
 
 </html>
