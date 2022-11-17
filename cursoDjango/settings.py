@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bingo.apps.BingoConfig',
-    'produtos.apps.ProdutosConfig',
-    'sobre.apps.SobreConfig',
+    'login.apps.LoginConfig',
+    'results.apps.ResultsConfig',
 ]
 
 MIDDLEWARE = [

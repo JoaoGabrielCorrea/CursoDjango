@@ -11,20 +11,22 @@
 
 <body>
 
-    {%block 'conteudo'%}
-        <h3>testes</h3>
-    {%endblock%}
+    
     
     <div class="superMain">
         <div class="header">
             <div class="headerContent">
-                <div><a href="#" class="navItems">Home</a></div>
+                <div><a href="{%url 'home'%}" class="navItems">Home</a></div>
                 <div><a href="#" class="navItems">BET NOW</a></div>
-                <div><a href="bingoresultado.html" class="navItems">Results</a></div>
-                <div><a href="loginbingo.html" class="navItems">Login</a></div>
+                <div><a href="{%url 'results'%}" class="navItems">Results</a></div>
+                <div><a href="{%url 'login'%}" class="navItems">Login</a></div>
             </div>
         </div>
-        <div class="main"></div>
+        <div class="main">
+            {%block 'conteudo'%}
+                <h3>testes</h3>
+            {%endblock%}
+        </div>
     </div>
 </body>
 
