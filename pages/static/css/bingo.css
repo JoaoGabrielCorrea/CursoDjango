@@ -117,7 +117,7 @@ input{
 }
 
 button{
-    background-color: red;
+    background-color: rgb(255, 0, 140);
     border-radius: 3px;
     margin-top: 30px;
     height: 35px;
